@@ -1,0 +1,27 @@
+# Compiled Executables
+*.exe
+*.out
+*.app
+
+# Object Files and Libraries
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+
+# Debug symbols and IDE folders
+*.dSYM/
+.vscode/
+.idea/
+cmake-build-debug/
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Project-specific archives and temporary files
+starter-files.tar.gz
+*.visual
