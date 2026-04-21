@@ -283,4 +283,15 @@ TEST(testFindManyNodesTree) {
     ASSERT_TRUE(tree.find(9) == tree.end());
 }
 
+TEST(testCopyNodes) {
+    BinarySearchTree<int> tree;
+    tree.insert(1);
+    tree.insert(4);
+    tree.insert(3);
+    tree.insert(2);
+    BinarySearchTree<int> newTree(tree);
+    ASSERT_EQUAL(tree.size(), newTree.size());
+    ASSERT_EQUAL(tree.height(), newTree.height());    
+}
+
 TEST_MAIN()
